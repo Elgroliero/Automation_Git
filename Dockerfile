@@ -1,2 +1,5 @@
-FROM node:14-alpine\nWORKDIR /app\nCOPY . .\nRUN npm install\nCMD [\
-node\, \index.js\]
+FROM node:14-alpine
+WORKDIR /app
+COPY . .
+RUN npm install
+CMD ["node", "index.js"]
