@@ -1,5 +1,5 @@
 FROM node:14-alpine
-WORKDIR /app
+WORKDIR /usr/src/app
 COPY . .
 RUN npm install
-CMD ["node","index.js"]
+CMD ["node", "index.js"]
